@@ -100,6 +100,15 @@
             margin: 0;
             font-size: 0.9rem;
         }
+		#ans {
+		display: none;
+        
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+			margin-left: 600px;
+		}
     </style>
 </head>
 <body>
@@ -124,14 +133,16 @@
                 </ul>
             </div>
 
+
             <div class="quiz">
                 <h3>2. Which language is used for web apps?</h3>
                 <ul>
-                    <li><label><input type="radio" name="q2"> PHP</label></li>
+                    <li><label><input type="radio" name="q2"> Java</label></li>
                     <li><label><input type="radio" name="q2"> Python</label></li>
                     <li><label><input type="radio" name="q2"> JavaScript</label></li>
                 </ul>
             </div>
+
 
             <div class="quiz">
                 <h3>3. What does CSS stand for?</h3>
@@ -142,9 +153,20 @@
                 </ul>
             </div>
 
-            <button class="submit-btn">Submit Answers</button>
+
+            <button onclick="sub()">Submit Answers</button>
         </section>
     </div>
+
+	
+				<div id="ans"> Correct answer is</br>
+				1.Hyper Text Markup Language </br>2.JavaScript </br>3.Cascading Style Sheets				</div>
+		<script>
+			function sub() {
+			var x = document.getElementById("ans");
+			x.style.display = 'inline-block';
+}
+	</script>
 
 <a href="programming.html">
 <h2 style="text-align:center""background-color:#FFF4A3">Go Back To Programming<h2>
